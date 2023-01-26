@@ -1,3 +1,12 @@
 import './lib/lib';
+import $ from './lib/lib';
 
-$('.active').toggleDisplay('flex').toggleDisplay('flex');
+$('button').on('click', function() {
+    $(this).toggleClass('active');
+    console.log(this);
+});
+
+
+function sayHello () {
+    console.log('hello');
+}
