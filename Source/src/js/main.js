@@ -9,6 +9,7 @@ $('div').click(function() {
     console.log($(this).index())
 });
 
-console.log($('div').eq(2).find('.some'));
-
+// console.log($('div').eq(2).find('.some'));
+// console.log($('.more').siblings());
+console.log($('.some').eq(0).siblings());
     
