@@ -25,4 +25,32 @@ $('.wrap').html(
     </div>`
 );
 
+
+$('#trigger').click(() => $('#trigger').createModal({
+    text: {
+        title: 'Modal title',
+        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at. Sapiente '
+    },
+    btns: {
+        count: 2,
+        settings: [
+                [
+                    'Close',
+                    ['btn-danger', 'mr-10'],
+                    true
+                ],
+                [
+                    'Save changes',
+                    ['btn-success'],
+                    false,
+                    () => {
+                        alert('Its saved');
+                    }
+                ]
+        ]
+    }   
+}));
+
+
+
 $('.dropdown-toggle').dropdown();   
