@@ -54,3 +54,4 @@ $('#trigger').click(() => $('#trigger').createModal({
 
 
 $('.dropdown-toggle').dropdown();   
+
